@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Real Time Twilio MMS Stream</title>
+    <title>Isabella's 6th Birthday Party Photo Stream!</title>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <link rel="stylesheet" href="/photobox/photobox.css">
     <style>
@@ -9,9 +9,11 @@
     </style>
   </head>
   <body>
+  <center><h1 style="font-family: Arial, Helvetica, sans-serif;">Welcome to Isabella's 6th Birthday party! Send your photos to 520-224-1015</h1>
     <div id='media_urls'>
-        <h1>Send a MMS to start the photostream.</h1>
+    <img src="Frozen_Wide.jpg" alt="frozen" >
     </div>
+    </center>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src='/photobox/jquery.photobox.js'></script>
     <script src="/socket.io/socket.io.js"></script>
@@ -19,11 +21,11 @@
       function createImage(url) {
           var markup = '<a href="' + url + '"><img src="' + url + '" /></a>';
           return markup;
-      }       
+      }
 
       function startGallery() {
          $('#media_urls h1').hide();
-         $('#media_urls a:first').click(); 
+         $('#media_urls a:first').click();
       }
 
       var socket = io();
